@@ -1,31 +1,40 @@
 <?= $this->extend('layouts/default') ?>
 
 <?= $this->section('content') ?>
-<h1>Welcome</h1>
-<div class="container">
-  <h1>
-    <center>Product List
-      <hr><br>
-    </center>
-  </h1>
+<div class="container mt-4">
+  <div class="flex flex-row">
+    <h1>
+      Products
+    </h1>
+    <a class="btn btn-sm btn-info text-white mt-2" href="/products/add">
+      Add new
+    </a>
+  </div>
+  <hr><br>
   <table class="table table-striped">
     <thead>
       <tr>
         <th scope="col">No.</th>
         <th scope="col">Product Name</th>
         <th scope="col">Price</th>
+        <th scope="col">Action</th>
       </tr>
     </thead>
     <tbody>
       <?php
-      $count = 0;
-      foreach ($products as $product) :
-        $count++;
-      ?>
+      foreach ($products as $i => $product) : ?>
         <tr>
-          <th scope="row"><?php echo $count; ?></th>
-          <td><?php echo $product->name; ?></td>
-          <td><?php echo number_format($product->price); ?></td>
+          <th scope="row"><?= $i + 1 ?></th>
+          <td><?= $product->name ?></td>
+          <td><?= number_format($product->price) ?></td>
+          <td>
+            <a class="btn btn-sm btn-info text-white" href="<?= '/products/edit/' . $product->id ?>">
+              Edit
+            </a>
+            <a class="btn btn-sm btn-danger" href="<?= '/products/delete/' . $product->id ?>">
+              Delete
+            </a>
+          </td>
         </tr>
       <?php endforeach; ?>
     </tbody>
