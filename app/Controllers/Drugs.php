@@ -41,13 +41,13 @@ class Drugs extends BaseController
 
   function update($id)
   {
-    $newDrugs = [
+    $newDrug = [
       'name' => $this->request->getPost('name'),
       'price' => intval($this->request->getPost('price')),
     ];
 
     $drug = new DrugModel();
-    $drug = $drug->update(intval($id), $newDrugs);
+    $drug = $drug->update(intval($id), $newDrug);
 
     return redirect()->to('/drugs');
   }
