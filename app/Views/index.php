@@ -4,16 +4,16 @@
 <div class="container mt-4">
   <div>
     <h1>
-      Pharmacy
+      Pharmacy Stock Management
     </h1>
   </div>
   <div class="row mt-4">
     <div class="col-sm-6">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Medicine</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go to medicine</a>
+          <h5 class="card-title">Drug</h5>
+          <p class="card-text">Drug collection.</p>
+          <a href="/drugs" class="btn btn-primary">Go to drugs</a>
         </div>
       </div>
     </div>
@@ -21,7 +21,7 @@
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Supplier</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text">Supplier collection.</p>
           <a href="#" class="btn btn-primary">Go to supplier</a>
         </div>
       </div>
@@ -29,17 +29,8 @@
     <div class="col-sm-6 mt-4">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Customer</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go to customer</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 mt-4">
-      <div class="card">
-        <div class="card-body">
           <h5 class="card-title">Transaction</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text">Transaction collection.</p>
           <a href="#" class="btn btn-primary">Go to transaction</a>
         </div>
       </div>

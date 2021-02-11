@@ -4,12 +4,12 @@
 <div class="container">
   <div>
     <h1>
-      Add New Product
+      Add New Drug
     </h1>
   </div>
   <hr><br>
   <div class="col-md-6 offset-md-3">
-    <form action="/products/insert" method="post">
+    <form action="/drugs/insert" method="post">
       <?= csrf_field() ?>
       <div class="form-group">
         <label class="form-label">Name</label>
@@ -19,7 +19,7 @@
         <label class="form-label">Price</label>
         <input type="number" name="price" class="form-control" required>
       </div>
-      <a href="/products" class="btn mt-4 btn-secondary">Back</a>
+      <a href="/drugs" class="btn mt-4 btn-secondary">Back</a>
       <button type="submit" class="btn mt-4 btn-primary">Submit</button>
     </form>
   </div>
