@@ -24,8 +24,6 @@ class Products extends BaseController
 
     $product = new ProductModel();
     $product->insert_product($name, $price);
-    // var_dump($price);
-    // redirect('products');
     return $this->index();
   }
 }
