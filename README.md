@@ -1,5 +1,7 @@
 # Pharmacy Codeigniter
 
+Dibuat untuk tugas UAS.
+
 ## Kebutuhan
 
 1. MySQL 15.1 Distrib 10.4.14-MariaDB
