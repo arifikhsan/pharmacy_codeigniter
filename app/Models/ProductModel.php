@@ -39,4 +39,16 @@ class ProductModel extends Model
 	protected $afterFind            = [];
 	protected $beforeDelete         = [];
 	protected $afterDelete          = [];
+
+  function get_products() {
+    return $this->asObject()->findAll();
+  }
+
+  function insert_product($name, $price) {
+    $product = [
+      'name' => $name,
+      'price' => $price,
+    ];
+    $this->insert($product);
+  }
 }
