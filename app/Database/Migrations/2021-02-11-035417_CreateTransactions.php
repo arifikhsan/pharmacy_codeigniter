@@ -35,6 +35,10 @@ class CreateTransactions extends Migration
         'type'           => 'INT',
         'unsigned'       => true,
       ],
+      'datetime'          => [
+        'type'           => 'TIMESTAMP',
+        'null'           => false,
+      ],
       'created_at datetime default current_timestamp',
       'updated_at datetime default current_timestamp on update current_timestamp',
     ]);

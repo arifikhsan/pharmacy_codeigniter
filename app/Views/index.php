@@ -22,7 +22,7 @@
         <div class="card-body">
           <h5 class="card-title">Supplier</h5>
           <p class="card-text">Supplier collection.</p>
-          <a href="#" class="btn btn-primary">Go to supplier</a>
+          <a href="/suppliers" class="btn btn-primary">Go to supplier</a>
         </div>
       </div>
     </div>
@@ -31,7 +31,7 @@
         <div class="card-body">
           <h5 class="card-title">Transaction</h5>
           <p class="card-text">Transaction collection.</p>
-          <a href="#" class="btn btn-primary">Go to transaction</a>
+          <a href="/transactions" class="btn btn-primary">Go to transaction</a>
         </div>
       </div>
     </div>
