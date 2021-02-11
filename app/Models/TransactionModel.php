@@ -14,7 +14,7 @@ class TransactionModel extends Model
 	protected $returnType           = 'array';
 	protected $useSoftDelete        = false;
 	protected $protectFields        = true;
-	protected $allowedFields        = ['supplier_id', 'medicine_id', 'type', 'quantity', 'price'];
+	protected $allowedFields        = ['supplier_id', 'drug_id', 'type', 'quantity', 'price'];
 
 	// Dates
 	protected $useTimestamps        = true;

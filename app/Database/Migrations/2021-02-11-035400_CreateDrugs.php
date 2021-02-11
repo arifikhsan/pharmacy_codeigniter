@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class CreateMedicines extends Migration
+class CreateDrugs extends Migration
 {
   public function up()
   {
@@ -25,11 +25,11 @@ class CreateMedicines extends Migration
       'updated_at datetime default current_timestamp on update current_timestamp',
     ]);
     $this->forge->addKey('id', true);
-    $this->forge->createTable('medicines');
+    $this->forge->createTable('drugs');
   }
 
   public function down()
   {
-    $this->forge->dropTable('medicines');
+    $this->forge->dropTable('drugs');
   }
 }

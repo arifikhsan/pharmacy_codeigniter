@@ -18,7 +18,7 @@ class CreateTransactions extends Migration
         'type'           => 'INT',
         'unsigned'       => true,
       ],
-      'medicine_id'          => [
+      'drug_id'          => [
         'type'           => 'INT',
         'unsigned'       => true,
       ],
@@ -40,7 +40,7 @@ class CreateTransactions extends Migration
     ]);
     $this->forge->addKey('id', true);
     $this->forge->addForeignKey('supplier_id', 'suppliers', 'id');
-    $this->forge->addForeignKey('medicine_id', 'medicines', 'id');
+    $this->forge->addForeignKey('drug_id', 'drugs', 'id');
     $this->forge->createTable('transactions');
   }
 
