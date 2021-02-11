@@ -6,10 +6,10 @@
     <h1>
       Drugs
     </h1>
-    <a class="btn btn-sm btn-secondary mt-2" href="/">
+    <a class="mt-2 btn btn-sm btn-secondary" href="/">
       Back
     </a>
-    <a class="btn btn-sm btn-info text-white mt-2" href="/drugs/add">
+    <a class="mt-2 text-white btn btn-sm btn-info" href="/drugs/add">
       Add new
     </a>
   </div>
@@ -18,7 +18,7 @@
     <thead>
       <tr>
         <th scope="col">No.</th>
-        <th scope="col">Drug Name</th>
+        <th scope="col">Name</th>
         <th scope="col">Price</th>
         <th scope="col">Action</th>
       </tr>
@@ -31,7 +31,7 @@
           <td><?= $drug->name ?></td>
           <td><?= number_format($drug->price) ?></td>
           <td>
-            <a class="btn btn-sm btn-info text-white" href="<?= '/drugs/edit/' . $drug->id ?>">
+            <a class="text-white btn btn-sm btn-info" href="<?= '/drugs/edit/' . $drug->id ?>">
               Edit
             </a>
             <a class="btn btn-sm btn-danger" href="<?= '/drugs/delete/' . $drug->id ?>">
