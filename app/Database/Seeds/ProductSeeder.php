@@ -13,12 +13,5 @@ class ProductSeeder extends Seeder
       'name' => static::faker()->word,
       'price' => static::faker()->randomDigit,
     ]);
-
-    // $product = [
-    //   'name' => 'apple',
-    //   'price' => 10
-    // ];
-
-    // $this->db->table('products')->insert($product);
   }
 }

@@ -43,14 +43,12 @@ class TransactionModel extends Model
   function getAll()
   {
     $this->select('*');
-    // $this->from('transactions');
     $this->select('drugs.id as drug_id');
     $this->select('drugs.name as drug_name');
     $this->select('suppliers.id as supplier_id');
     $this->select('suppliers.name as supplier_name');
     $this->join('drugs', 'drugs.id = transactions.drug_id');
     $this->join('suppliers', 'suppliers.id = transactions.supplier_id');
-    $query = $this->get()->getResult();
-    return $query;
+    return $this->get()->getResult();
   }
 }

@@ -8,6 +8,9 @@ class DatabaseSeeder extends Seeder
 {
 	public function run()
 	{
-		$this->call('ProductSeeder');
+		// $this->call('ProductSeeder');
+		$this->call('DrugSeeder');
+		$this->call('SupplierSeeder');
+		$this->call('TransactionSeeder');
 	}
 }
