@@ -2,7 +2,7 @@
 
 <?= $this->section('content') ?>
 <div class="container mt-4">
-  <div class="flex flex-row">
+  <div>
     <h1>
       Products
     </h1>
