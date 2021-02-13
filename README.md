@@ -1,6 +1,6 @@
 # Pharmacy Codeigniter
 
-Dibuat untuk tugas UAS.
+Latihan Codeigniter.
 
 ## Alat yang dibutuhkan
 
