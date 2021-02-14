@@ -37,7 +37,7 @@
           <td><?= $transaction->type ?></td>
           <td><?= $transaction->quantity ?></td>
           <td><?= number_format($transaction->price) ?></td>
-          <td><?=date("l, M d, Y | H:i:s", strtotime($transaction->datetime)) ?></td>
+          <td><?= date("l, M d, Y | H:i:s", strtotime($transaction->datetime)) ?></td>
           <td>
             <a class="text-white btn btn-sm btn-info" href="<?= '/transactions/edit/' . $transaction->id ?>">
               Edit
